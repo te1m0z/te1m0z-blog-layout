@@ -1,0 +1,81 @@
+<div id="background-animation">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+        <defs>
+            <linearGradient
+                    id='bg-purple-gradient'
+                    x1='0'
+                    y1='0'
+                    x2='1'
+                    y2='1'
+            >
+                <stop offset='0' stop-opacity="0.7">
+                    <animate
+                            attributeName="stop-color"
+                            values="#0C0F1F;#F81DFB;#F81DFB;#F81DFB;#0C0F1F;"
+                            dur="20s"
+                            repeatCount="indefinite">
+                    </animate>
+                </stop>
+                <stop offset='1' stop-opacity="0">
+                    <animate
+                            attributeName="stop-color"
+                            values="#0C0F1F;"
+                            dur="20s"
+                            repeatCount="indefinite"
+                    >
+                    </animate>
+                </stop>
+                <animateTransform
+                        attributeName="gradientTransform"
+                        type="rotate"
+                        values="360 .5 .5; 0 .5 .5"
+                        dur="20s"
+                        repeatCount="indefinite"
+                />
+            </linearGradient>
+
+
+            <linearGradient
+                    id='bg-blue-gradient'
+                    x1='1'
+                    y1='1'
+                    x2='0'
+                    y2='0'
+            >
+                <stop offset='0' stop-opacity="0.8">
+                    <animate
+                            begin="10s"
+                            attributeName="stop-color"
+                            values="#0C0F1F;"
+                            dur="10s"
+                            repeatCount="indefinite"
+                    >
+                    </animate>
+                </stop>
+                <stop offset='1' stop-opacity="0.8">
+                    <animate
+                            begin="10s"
+                            attributeName="stop-color"
+                            values="#0C0F1F;#164D9B;#0C0F1F;"
+                            dur="10s"
+                            repeatCount="indefinite">
+                    </animate>
+                </stop>
+                <animateTransform
+                        attributeName="gradientTransform"
+                        type="rotate"
+                        values="360 .5 .5; 0 .5 .5"
+                        dur="20s"
+                        repeatCount="indefinite"
+                />
+            </linearGradient>
+        </defs>
+
+        <rect fill='url(#bg-purple-gradient)' width='100%' height='100%' />
+        <rect fill='url(#bg-blue-gradient)' width='100%' height='100%' />
+    </svg>
+</div>
+
+<header>
+    Header
+</header>

@@ -1,0 +1,47 @@
+html,
+body {
+    overflow-x: hidden;
+    max-width: 1920px;
+    min-width: 320px;
+    min-height: 100vh;
+}
+
+body {
+    display: flex;
+    flex-flow: column nowrap;
+    font-family: 'Oxanium', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: $text-white;
+    line-height: 1.5;
+    background: $bg-black;
+}
+
+.container {
+    width: 100%;
+    max-width: 1050px;
+    padding: 0 15px;
+    margin: 0 auto;
+    height: inherit;
+    position: relative;
+
+    @media (max-width: 768px) {
+        padding: 0 7px;
+    }
+}
+
+small {
+    font-size: 15px;
+}
+
+strong {
+    font-weight: 700;
+}
+
+a,
+input,
+select,
+textarea,
+button {
+    transition: all 350ms ease;
+}

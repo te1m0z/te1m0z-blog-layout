@@ -1,0 +1,59 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+input,
+select,
+textarea,
+button,
+iframe {
+    border: none;
+    outline: none;
+    background: transparent;
+    vertical-align: baseline;
+}
+
+footer,
+header,
+nav,
+section,
+main,
+img {
+    display: block;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+a:link,
+a:visited {
+    color: initial;
+    text-decoration: none;
+}
+
+ol,
+ul,
+li {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+input {
+    appearance: none;
+}
+
